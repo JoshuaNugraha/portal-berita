@@ -16,7 +16,7 @@ const verifyJWT = (req, res, next) => {
     if (err) {
       return res.status(403).json({ message: "Failed to authenticate token." });
     }
-    if (decoded.role !== "Admin") {
+    if (decoded.role !== "admin" || decoded.role !== "Admin") {
       return res.status(403).json({ message: "Access denied. Admins only." });
     }
     req.user = decoded;
