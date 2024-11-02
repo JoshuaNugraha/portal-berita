@@ -17,11 +17,16 @@ This is an API application built with Express and Sequelize. The application all
 ```bash
 git clone https://github.com/yourusername/yourrepository.git
 cd yourrepository
+```
 
-**### 2. Install dependencies**
+
+### 2. Install dependencies
+```bash
 npm install
+```
 
-**### 3. Configure Environment Variables**
+### 3. Configure Environment Variables
+```bash
 Create .env  file in the root directory and add the following environment variables:
 DB_HOST_DEV = your_db_host
 DB_USER_DEV = your_db_username
@@ -29,18 +34,32 @@ DB_PASS_DEV = your_db_password
 DB_NAME_DEV = your_db_name
 
 JWT_KEY = your_jwt_key
+```
 
-**### 4. Set up database**
+
+### 4. Set up database
+```bash
 npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
+```
 
-**### 5. Sart Server**
+
+### 5. Sart Server
+```bash
 npm start
+```
 
-**### 6. JWT Authentication**
+### 6. JWT Authentication
 Some routes require JWT authentication. Obtain a token by logging in and include it in the authorization header as follows:
+```bash
 authorization: <your_jwt_token>
+```
 
 
-**### 7. API Documentation**
+### 7. API Documentation
+```bash
 http://<your_localhost>/api-docs
+```
+
+
+
