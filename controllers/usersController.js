@@ -52,6 +52,8 @@ exports.newsDetail = async (req, res) => {
   }
 };
 
+// kategori list
+
 exports.listCategory = async (req, res) => {
   try {
     const categories = await Categories.findAll({
