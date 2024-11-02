@@ -26,8 +26,9 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-```bash
 Create .env  file in the root directory and add the following environment variables:
+```bash
+
 DB_HOST_DEV = your_db_host
 DB_USER_DEV = your_db_username
 DB_PASS_DEV = your_db_password
